@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\caption{Stability of pairwise EDEC for five different runs each test case}\label{tab:pw-stability}
+\resizebox{\columnwidth}!{
+\begin{tabular}{ | r | r | r | r | r | r | H  r | H  r |}
+\hline
+Data & N & Models & NMI & ACC & vsIDEC & Avg-WMC & \#Unsat & \%Change & Time (s)  \\ \hline 
+MNIST & 1000 & EDEC-A & { \color{green} 0.8675 $\pm$ 0.0008} & { \color{green} 0.8834 $\pm$ 0.0003} & { \color{green} 0.36} { \color{green} 0.08} & 0.9152 $\pm$ 0.0037 & 0 $\pm$ 0 & 9.47e-04 $\pm$ 1.81e-04 & 234 $\pm$ 5 \\ 
+MNIST & 1000 & EDEC-B & { \color{blue} 0.8671 $\pm$ 0.0009} & { \color{blue} 0.8824 $\pm$ 0.0008} & { \color{green} 0.87} { \color{green} 0.36} & 0.9422 $\pm$ 0.0026 & 0 $\pm$ 0 & 1.08e-03 $\pm$ 1.62e-04 & 396 $\pm$ 20 \\ \hline 
+Fashion & 1000 & EDEC-A & { \color{green} 0.6019 $\pm$ 0.0006} & { \color{blue} 0.5261 $\pm$ 0.0038} & { \color{green} 0.08} { \color{green} 0.08} & 0.9296 $\pm$ 0.0060 & 1.0000 $\pm$ 0.6325 & 8.13e-04 $\pm$ 2.86e-04 & 248 $\pm$ 1 \\ 
+Fashion & 1000 & EDEC-B & { \color{blue} 0.6013 $\pm$ 0.0008} & { \color{green} 0.5273 $\pm$ 0.0011} & { \color{green} 0.08} { \color{green} 0.01} & 0.9508 $\pm$ 0.0046 & 0.6000 $\pm$ 0.4899 & 6.27e-04 $\pm$ 1.55e-04 & 362 $\pm$ 5 \\ \hline 
+Reuters & 1000 & EDEC-A & { \color{green} 0.6202 $\pm$ 0.0026} & { \color{green} 0.7746 $\pm$ 0.0020} & { \color{green} 0.01} { \color{green} 0.01} & 0.9771 $\pm$ 0.0029 & 0 $\pm$ 0 & 2.20e-04 $\pm$ 1.17e-04 & 8.77 $\pm$ 2.08 \\ 
+Reuters & 1000 & EDEC-B & 0.5870 $\pm$ 0.0024 & 0.7519 $\pm$ 0.0020 & { \color{green} 0.01} { \color{green} 0.01} & 0.9819 $\pm$ 0.0006 & 0 $\pm$ 0 & 2.20e-04 $\pm$ 1.47e-04 & 27.25 $\pm$ 3.76 \\ 
+\hline
+\end{tabular}
+}
+\end{table}

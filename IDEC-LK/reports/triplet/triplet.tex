@@ -1,0 +1,46 @@
+\begin{table}[ht]
+\caption{Comparison on triplet constraints with DCC and EDEC}\label{tab:triplet}
+\resizebox{\columnwidth}!{
+\begin{tabular}{ | r | r | r | r | r | r | H  r | H  r |}
+\hline
+Data & N & Models & NMI & ACC & vsIDEC & Avg-WMC & \#Unsat & \%Change & Time (s)  \\ \hline 
+MNIST & 10 & DCC & 0.8662 $\pm$ 0.0003 & { \color{blue} 0.8805 $\pm$ 0.0004} & { \color{black}0.08} { \color{black}0.87} & 0 $\pm$ 0 & 0 $\pm$ 0 & 1.83e-03 $\pm$ 1.32e-04 & 133 $\pm$ 6 \\ 
+MNIST & 10 & EDEC-A & { \color{green} 0.8676 $\pm$ 0.0009} & { \color{green} 0.8813 $\pm$ 0.0005} & { \color{green} 0.36} { \color{black}0.87} & 0.8910 $\pm$ 0.0095 & 0 $\pm$ 0 & 1.17e-03 $\pm$ 1.59e-04 & 235 $\pm$ 3 \\ 
+MNIST & 10 & EDEC-B & { \color{blue} 0.8665 $\pm$ 0.0012} & { \color{blue} 0.8800 $\pm$ 0.0006} & { \color{black}0.36} { \color{black}0.36} & 0.9912 $\pm$ 0.0020 & 0 $\pm$ 0 & 1.14e-03 $\pm$ 2.00e-04 & 253 $\pm$ 3 \\ \hline 
+MNIST & 100 & DCC & { \color{blue} 0.8659 $\pm$ 0.0002} & { \color{blue} 0.8805 $\pm$ 0.0011} & { \color{black}0.01} { \color{black}0.87} & 0 $\pm$ 0 & 0 $\pm$ 0 & 1.84e-03 $\pm$ 6.78e-05 & 127 $\pm$ 5 \\ 
+MNIST & 100 & EDEC-A & { \color{green} 0.8678 $\pm$ 0.0020} & { \color{green} 0.8815 $\pm$ 0.0017} & { \color{green} 0.87} { \color{green} 0.87} & 0.8955 $\pm$ 0.0025 & 0 $\pm$ 0 & 1.17e-03 $\pm$ 1.56e-04 & 252 $\pm$ 12 \\ 
+MNIST & 100 & EDEC-B & { \color{blue} 0.8666 $\pm$ 0.0016} & { \color{blue} 0.8812 $\pm$ 0.0011} & { \color{black}0.87} { \color{black}1.00} & 0.9913 $\pm$ 0.0009 & 0 $\pm$ 0 & 1.55e-03 $\pm$ 2.96e-04 & 436 $\pm$ 2 \\ \hline 
+MNIST & 500 & DCC & 0.8669 $\pm$ 0.0005 & { \color{green} 0.8817 $\pm$ 0.0016} & { \color{green} 0.87} { \color{green} 1.00} & 0 $\pm$ 0 & 1.80 $\pm$ 0.75 & 1.88e-03 $\pm$ 9.80e-05 & 151 $\pm$ 11 \\ 
+MNIST & 500 & EDEC-A & 0.8631 $\pm$ 0.0020 & { \color{blue} 0.8792 $\pm$ 0.0012} & { \color{black}0.01} { \color{black}0.08} & 0.9096 $\pm$ 0.0036 & 0 $\pm$ 0 & 1.02e-03 $\pm$ 2.01e-04 & 296 $\pm$ 14 \\ 
+MNIST & 500 & EDEC-B & { \color{green} 0.8685 $\pm$ 0.0010} & { \color{blue} 0.8815 $\pm$ 0.0008} & { \color{green} 0.01} { \color{green} 0.87} & 0.9916 $\pm$ 0.0005 & 0 $\pm$ 0 & 1.15e-03 $\pm$ 1.26e-04 & 1263 $\pm$ 2 \\ \hline 
+MNIST & 1000 & DCC & { \color{green} 0.8692 $\pm$ 0.0006} & { \color{green} 0.8855 $\pm$ 0.0015} & { \color{green} 0.01} { \color{green} 0.08} & 0 $\pm$ 0 & 2.40 $\pm$ 1.36 & 1.92e-03 $\pm$ 2.67e-05 & 191 $\pm$ 21 \\ 
+MNIST & 1000 & EDEC-A & 0.8588 $\pm$ 0.0017 & 0.8771 $\pm$ 0.0013 & { \color{black}0.01} { \color{black}0.01} & 0.9206 $\pm$ 0.0053 & 0.8000 $\pm$ 0.7483 & 9.60e-04 $\pm$ 1.91e-04 & 315 $\pm$ 1 \\ 
+MNIST & 1000 & EDEC-B & { \color{blue} 0.8682 $\pm$ 0.0013} & 0.8812 $\pm$ 0.0011 & { \color{green} 0.08} { \color{black}1.00} & 0.9915 $\pm$ 0.0003 & 0 $\pm$ 0 & 1.28e-03 $\pm$ 1.10e-04 & 2398 $\pm$ 74 \\ \hline 
+Fashion & 10 & DCC & 0.5934 $\pm$ 0.0008 & 0.5119 $\pm$ 0.0032 & { \color{black}0.08} { \color{black}0.08} & 0 $\pm$ 0 & 0 $\pm$ 0 & 1.71e-03 $\pm$ 2.16e-04 & 98.69 $\pm$ 8.97 \\ 
+Fashion & 10 & EDEC-A & { \color{green} 0.5981 $\pm$ 0.0005} & { \color{green} 0.5222 $\pm$ 0.0027} & { \color{green} 0.36} { \color{green} 0.36} & 0.9360 $\pm$ 0.0166 & 0 $\pm$ 0 & 4.83e-04 $\pm$ 1.74e-04 & 246 $\pm$ 1 \\ 
+Fashion & 10 & EDEC-B & { \color{blue} 0.5965 $\pm$ 0.0020} & { \color{blue} 0.5194 $\pm$ 0.0040} & { \color{black}1.00} { \color{green} 0.87} & 0.9953 $\pm$ 0.0016 & 0 $\pm$ 0 & 6.73e-04 $\pm$ 3.76e-04 & 266 $\pm$ 5 \\ \hline 
+Fashion & 100 & DCC & 0.5927 $\pm$ 0.0013 & 0.5111 $\pm$ 0.0026 & { \color{black}0.08} { \color{black}0.08} & 0 $\pm$ 0 & 1.80 $\pm$ 1.33 & 1.65e-03 $\pm$ 1.33e-04 & 90.90 $\pm$ 7.01 \\ 
+Fashion & 100 & EDEC-A & { \color{green} 0.5990 $\pm$ 0.0010} & { \color{green} 0.5236 $\pm$ 0.0034} & { \color{green} 0.36} { \color{green} 0.36} & 0.9316 $\pm$ 0.0081 & 0 $\pm$ 0 & 6.23e-04 $\pm$ 1.80e-04 & 254 $\pm$ 1 \\ 
+Fashion & 100 & EDEC-B & { \color{blue} 0.5969 $\pm$ 0.0014} & { \color{blue} 0.5175 $\pm$ 0.0021} & { \color{green} 1.00} { \color{black}0.87} & 0.9938 $\pm$ 0.0016 & 0.2000 $\pm$ 0.4000 & 4.00e-04 $\pm$ 1.22e-04 & 456 $\pm$ 3 \\ \hline 
+Fashion & 500 & DCC & { \color{blue} 0.5989 $\pm$ 0.0020} & { \color{blue} 0.5219 $\pm$ 0.0067} & { \color{green} 0.36} { \color{green} 0.36} & 0 $\pm$ 0 & 8.80 $\pm$ 2.32 & 1.80e-03 $\pm$ 1.97e-04 & 141 $\pm$ 26 \\ 
+Fashion & 500 & EDEC-A & { \color{blue} 0.5989 $\pm$ 0.0014} & { \color{green} 0.5241 $\pm$ 0.0028} & { \color{green} 0.36} { \color{green} 0.08} & 0.9376 $\pm$ 0.0035 & 1.20 $\pm$ 1.17 & 4.33e-04 $\pm$ 1.22e-04 & 285 $\pm$ 0 \\ 
+Fashion & 500 & EDEC-B & { \color{green} 0.5992 $\pm$ 0.0015} & { \color{blue} 0.5228 $\pm$ 0.0022} & { \color{green} 0.08} { \color{green} 0.36} & 0.9937 $\pm$ 0.0008 & 1.20 $\pm$ 1.17 & 6.80e-04 $\pm$ 2.01e-04 & 1312 $\pm$ 1 \\ \hline 
+Fashion & 1000 & DCC & { \color{green} 0.6009 $\pm$ 0.0042} & { \color{green} 0.5370 $\pm$ 0.0048} & { \color{green} 0.36} { \color{green} 0.01} & 0 $\pm$ 0 & 15.20 $\pm$ 4.40 & 2.12e-03 $\pm$ 4.51e-04 & 270 $\pm$ 38 \\ 
+Fashion & 1000 & EDEC-A & { \color{blue} 0.5981 $\pm$ 0.0028} & { \color{blue} 0.5286 $\pm$ 0.0053} & { \color{green} 0.87} { \color{green} 0.08} & 0.9163 $\pm$ 0.0113 & 8.80 $\pm$ 0.98 & 1.25e-03 $\pm$ 2.71e-04 & 329 $\pm$ 0 \\ 
+Fashion & 1000 & EDEC-B & { \color{blue} 0.6003 $\pm$ 0.0013} & { \color{blue} 0.5283 $\pm$ 0.0065} & { \color{green} 0.08} { \color{green} 0.08} & 0.9932 $\pm$ 0.0009 & 4.60 $\pm$ 3.38 & 6.83e-04 $\pm$ 2.61e-04 & 2413 $\pm$ 9 \\ \hline 
+Reuters & 10 & DCC & 0.4687 $\pm$ 0.0094 & 0.4590 $\pm$ 0.0165 & { \color{black}0.01} { \color{black}0.01} & 0 $\pm$ 0 & 0 $\pm$ 0 & 1.40e-03 $\pm$ 2.61e-04 & 4.52 $\pm$ 0.58 \\ 
+Reuters & 10 & EDEC-A & { \color{blue} 0.5329 $\pm$ 0.0056} & { \color{blue} 0.7140 $\pm$ 0.0034} & { \color{green} 0.36} { \color{green} 0.08} & 0.9452 $\pm$ 0.0090 & 0 $\pm$ 0 & 2.20e-04 $\pm$ 1.47e-04 & 5.86 $\pm$ 1.92 \\ 
+Reuters & 10 & EDEC-B & { \color{green} 0.5337 $\pm$ 0.0034} & { \color{green} 0.7143 $\pm$ 0.0028} & { \color{green} 0.08} { \color{green} 0.36} & 0.9831 $\pm$ 0.0119 & 0 $\pm$ 0 & 2.20e-04 $\pm$ 7.48e-05 & 6.31 $\pm$ 1.26 \\ \hline 
+Reuters & 100 & DCC & 0.4839 $\pm$ 0.0091 & 0.4698 $\pm$ 0.0066 & { \color{black}0.01} { \color{black}0.01} & 0 $\pm$ 0 & 0 $\pm$ 0 & 1.54e-03 $\pm$ 2.33e-04 & 4.62 $\pm$ 0.55 \\ 
+Reuters & 100 & EDEC-A & { \color{blue} 0.5285 $\pm$ 0.0044} & { \color{blue} 0.7102 $\pm$ 0.0026} & { \color{black}0.36} { \color{black}0.36} & 0.9565 $\pm$ 0.0079 & 0 $\pm$ 0 & 3.00e-04 $\pm$ 1.41e-04 & 8.43 $\pm$ 2.77 \\ 
+Reuters & 100 & EDEC-B & { \color{green} 0.5306 $\pm$ 0.0043} & { \color{green} 0.7118 $\pm$ 0.0040} & { \color{black}0.87} { \color{black}0.87} & 0.9901 $\pm$ 0.0020 & 0 $\pm$ 0 & 3.00e-04 $\pm$ 2.10e-04 & 15.12 $\pm$ 3.90 \\ \hline 
+Reuters & 500 & DCC & 0.4829 $\pm$ 0.0087 & 0.4791 $\pm$ 0.0062 & { \color{black}0.01} { \color{black}0.01} & 0 $\pm$ 0 & 0.8000 $\pm$ 0.7483 & 1.70e-03 $\pm$ 1.26e-04 & 5.71 $\pm$ 0.74 \\ 
+Reuters & 500 & EDEC-A & { \color{blue} 0.5277 $\pm$ 0.0176} & { \color{blue} 0.7065 $\pm$ 0.0121} & { \color{black}0.36} { \color{black}0.36} & 0.9721 $\pm$ 0.0018 & 0.4000 $\pm$ 0.8000 & 2.60e-04 $\pm$ 1.62e-04 & 10.60 $\pm$ 2.38 \\ 
+Reuters & 500 & EDEC-B & { \color{green} 0.5278 $\pm$ 0.0069} & { \color{green} 0.7099 $\pm$ 0.0051} & { \color{black}0.87} { \color{black}0.36} & 0.9888 $\pm$ 0.0020 & 0 $\pm$ 0 & 2.20e-04 $\pm$ 1.17e-04 & 43.06 $\pm$ 15.99 \\ \hline 
+Reuters & 1000 & DCC & 0.4936 $\pm$ 0.0145 & 0.4922 $\pm$ 0.0211 & { \color{black}0.01} { \color{black}0.01} & 0 $\pm$ 0 & 0.6000 $\pm$ 0.4899 & 1.58e-03 $\pm$ 4.12e-04 & 10.80 $\pm$ 1.70 \\ 
+Reuters & 1000 & EDEC-A & { \color{green} 0.5790 $\pm$ 0.0119} & { \color{green} 0.7544 $\pm$ 0.0088} & { \color{green} 0.01} { \color{green} 0.01} & 0.9790 $\pm$ 0.0034 & 4.40 $\pm$ 3.50 & 4.20e-04 $\pm$ 2.32e-04 & 16.31 $\pm$ 5.27 \\ 
+Reuters & 1000 & EDEC-B & 0.5359 $\pm$ 0.0075 & 0.7142 $\pm$ 0.0074 & { \color{green} 0.36} { \color{green} 0.36} & 0.9918 $\pm$ 0.0016 & 0.2000 $\pm$ 0.4000 & 3.80e-04 $\pm$ 2.32e-04 & 102 $\pm$ 29 \\ 
+\hline
+\end{tabular}
+}
+\end{table}
